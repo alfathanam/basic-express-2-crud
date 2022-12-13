@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "nama": "aris",
+        "kelas": "4ia24",
+        "semester": 3,
+        "umur": 21,
+        "gpa": 3.5
+    },
+    {
+        "id": 2,
+        "nama": "bimo",
+        "kelas": "4ia24",
+        "semester": 3,
+        "umur": 22,
+        "gpa": 3.6
+    },
+    {
+        "id": 3,
+        "nama": "chikal",
+        "kelas": "4ia24",
+        "semester": 3,
+        "umur": 26,
+        "gpa": 3.4
+    },
+    {
+        "id": 4,
+        "nama": "budi",
+        "kelas": "4ia24",
+        "semester": 3,
+        "umur": 22,
+        "gpa": 3.5
+    },
+    {
+        "id": 5,
+        "nama": "angga",
+        "kelas": "4ia24",
+        "semester": 3,
+        "umur": 23,
+        "gpa": 3.2
+    }
+]
