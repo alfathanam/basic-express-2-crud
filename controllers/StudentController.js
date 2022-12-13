@@ -12,8 +12,17 @@ class StudentController {
         res.send(err);
       });
   }
-  static createStudent(req, res) {
-    res.send("create student page");
+  static create(req, res) {
+    // res.send("create student page");
+    //res hanya 1 yang diterima  jika ada 2 res maka res setelahnya tidak akan di baca
+    // console.info(req.body);
+    Students.create(req.body)
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
   }
   static getInformationStudent(req, res) {
     const id = +req.params.userId;
@@ -29,6 +38,40 @@ class StudentController {
     } else {
       res.send(`id must a number`);
     }
+  }
+
+  static delete(req, res) {
+    const id = +req.params.userId;
+    Students.deleteStudent(id)
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((err) => {
+        res.send(result);
+      });
+  }
+  static update(req, res) {
+    const id = +req.params.userId;
+    Students.updateStudent(id, req.body)
+      .then((result) => {
+        //code
+        res.send(result);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
+  }
+
+  static search(req, res) {
+    //code
+    // console.info(req.query);
+    Students.search(req.query)
+      .then((result) => {
+        res.send(result);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
   }
 }
 
