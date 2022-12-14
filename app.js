@@ -9,7 +9,7 @@ app.use(routes);
 
 // cari goole app.use('express.json) sudah tidak masuk dengan package express
 // app.use(express.json());
-// app.use(express.urlencoded({ extended: false }));
+// app.use(express.urlencoded({ extended: true }));
 
 //body parser jika error
 

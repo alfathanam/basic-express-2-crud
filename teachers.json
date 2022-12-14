@@ -1,42 +1,50 @@
 [
-    {
-        "id": 1,
-        "name": "ferdi",
-        "subject": "matematika dasar",
-        "age": 30,
-        "city": "jakarta",
-        "isTeaching": true
-    },
-    {
-        "id": 2,
-        "name": "budi",
-        "subject": "fisika dasar",
-        "age": 29,
-        "city": "jakarta",
-        "isTeaching": true
-    },
-    {
-        "id": 3,
-        "name": "ilham",
-        "subject": "struktur data",
-        "age": 35,
-        "city": "bandung",
-        "isTeaching": false
-    },
-    {
-        "id": 4,
-        "name": "rendi",
-        "subject": "web program",
-        "age": 27,
-        "city": "bandung",
-        "isTeaching": true
-    },
-    {
-        "id": 5,
-        "name": "jhon",
-        "subject": "OOP Dasar",
-        "age": 30,
-        "city": "bekasi",
-        "isTeaching": true
-    }
+   {
+      "id": 1,
+      "name": "ferdi",
+      "subject": "matematika dasar",
+      "age": 30,
+      "city": "jakarta",
+      "isTeaching": true
+   },
+   {
+      "id": 2,
+      "name": "budi",
+      "subject": "fisika dasar",
+      "age": 29,
+      "city": "jakarta",
+      "isTeaching": true
+   },
+   {
+      "id": 3,
+      "name": "ilham",
+      "subject": "struktur data",
+      "age": 35,
+      "city": "bandung",
+      "isTeaching": false
+   },
+   {
+      "id": 4,
+      "name": "rendi",
+      "subject": "web program",
+      "age": 27,
+      "city": "bandung",
+      "isTeaching": true
+   },
+   {
+      "id": 5,
+      "name": "jhon",
+      "subject": "OOP Dasar",
+      "age": 30,
+      "city": "bekasi",
+      "isTeaching": true
+   },
+   {
+      "id": 6,
+      "name": "adil",
+      "subject": "react oop",
+      "age": 30,
+      "city": "jakarta",
+      "isTeaching": true
+   }
 ]

@@ -11,9 +11,6 @@ class TeacherController {
         res.send(err);
       });
   }
-  static createTeacher(req, res) {
-    res.send("create teacher page");
-  }
   static getTeacherInformation(req, res) {
     const id = +req.params.userId;
     if (typeof id === "number" && isNaN(id) === false) {
@@ -28,6 +25,51 @@ class TeacherController {
     } else {
       res.send(`id must be a number`);
     }
+  }
+  static createTeacher(req, res) {
+    // res.send("create teacher page");
+    Teachers.create(req.body)
+      .then((result) => {
+        //code
+        res.send(result);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
+  }
+
+  static delete(req, res) {
+    const id = +req.params.userId;
+    Teachers.deleteTeacher(id)
+      .then((result) => {
+        //code
+        res.send(result);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
+  }
+  static update(req, res) {
+    const id = +req.params.userId;
+    Teachers.updateTeacher(id, req.body)
+      .then((result) => {
+        //code
+        res.send(result);
+      })
+      .catch((err) => {
+        //
+        res.send(err);
+      });
+  }
+  static search(req, res) {
+    Teachers.searchTeacher(req.query)
+      .then((result) => {
+        //code
+        res.send(result);
+      })
+      .catch((err) => {
+        res.send(err);
+      });
   }
 }
 
